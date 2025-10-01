@@ -8,11 +8,29 @@
 </head>
 <body>
     <main>
-        <h1>Galeria de Imagens</h1>
+        <header class="gallery-header">
+            <h1>Galeria de Imagens</h1>
+            <p class="subtitle">Explore nossa coleção de imagens</p>
+        </header>
 
-        <!-- Coloque a galeria aqui -->
-        <div id="gallery-container">
-            <!-- TODO: Implementar galeria -->
+        <!-- Filtros de categoria -->
+        <section class="filter-section">
+            <h2 class="filter-title">Filtrar por categoria</h2>
+            <div id="filter-buttons" class="filter-buttons">
+                <!-- Os botões de filtro serão gerados dinamicamente -->
+            </div>
+        </section>
+
+        <!-- Container da galeria -->
+        <section class="gallery-section">
+            <div id="gallery-container" class="gallery-grid">
+                <!-- As imagens serão geradas dinamicamente -->
+            </div>
+        </section>
+
+        <!-- Mensagem quando não há resultados -->
+        <div id="no-results" class="no-results hidden">
+            <p>Nenhuma imagem encontrada para esta categoria.</p>
         </div>
     </main>
 
