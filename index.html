@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Imagens</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <main>
         <header class="gallery-header">
@@ -13,6 +15,17 @@
             <p class="subtitle">Explore nossa coleção de imagens</p>
         </header>
 
+        <!-- Botão para adicionar imagem -->
+        <div class="add-image-section">
+            <button id="add-image-btn" class="add-image-btn" aria-label="Adicionar nova imagem à galeria">
+                <span class="btn-icon">+</span>
+                <span class="btn-text">Adicionar Imagem</span>
+            </button>
+        </div>
+
+        <!-- Galeria de imagens -->
+        <div id="gallery-container" class="gallery-grid">
+            <!-- Imagens serão adicionadas aqui dinamicamente -->
         <!-- Filtros de categoria -->
         <section class="filter-section">
             <h2 class="filter-title">Filtrar por categoria</h2>
@@ -36,4 +49,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
